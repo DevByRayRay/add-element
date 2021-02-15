@@ -4,7 +4,7 @@ module.exports = {
     build: {
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
-            name: 'xElement'
+            name: 'AddElement'
           },
     }
 }

@@ -1,4 +1,4 @@
-export interface iElement {
+export interface iAddElement {
     elementType: string
     className?: string | undefined
     content?: string | undefined
@@ -8,8 +8,8 @@ export interface iElement {
     attr?: string[][] | undefined
 }
 
-// xElement is a util class for creating HTML elements via JavaScript
-export default class xElement {
+// AddElement is a util class for creating HTML elements via JavaScript
+export default class AddElement {
     elementType: string = ''
     className: string = ''
     content: string = ''
@@ -18,7 +18,7 @@ export default class xElement {
     id: string = ''
     attr: string[][] | null = null
 
-    constructor(obj: iElement) {
+    constructor(obj: iAddElement) {
         this.elementType = obj.elementType
         this.className = obj.className
         this.content = obj.content

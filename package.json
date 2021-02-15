@@ -1,21 +1,34 @@
 {
-  "name": "x-element",
-  "version": "0.0.1",
+  "name": "add-element",
+  "version": "0.0.2",
+  "description": "DOM Utility to create HTML elements",
   "author": "Dev By RayRay",
+  "keywords": [
+    "DOM",
+    "javascript",
+    "create element",
+    "HTML"
+  ],
+  "homepage": "https://github.com/DevByRayRay/add-element",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "buildpackage": "npm run build && cp package.json ./dist && cp README.md ./dist && cd dist && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevByRayRay/add-element"
   },
   "devDependencies": {
     "vite": "^2.0.0-beta.65"
   },
-  "main": "./dist/x-element.umd.js",
-  "module": "./dist/x-element.es.js",
+  "main": "./dist/add-element.umd.js",
+  "module": "./dist/add-element.es.js",
   "exports": {
     ".": {
-      "import": "./dist/x-element.es.js",
-      "require": "./dist/x-element.umd.js"
+      "import": "./dist/add-element.es.js",
+      "require": "./dist/add-element.umd.js"
     }
   },
   "engines": {
