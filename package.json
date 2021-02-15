@@ -1,0 +1,24 @@
+{
+  "name": "x-element",
+  "version": "0.0.1",
+  "author": "Dev By RayRay",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.0.0-beta.65"
+  },
+  "main": "./dist/x-element.umd.js",
+  "module": "./dist/x-element.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/x-element.es.js",
+      "require": "./dist/x-element.umd.js"
+    }
+  },
+  "engines": {
+    "node": ">= 15.0.0"
+ }
+}
